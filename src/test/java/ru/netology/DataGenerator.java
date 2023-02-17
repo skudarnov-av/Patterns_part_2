@@ -11,7 +11,7 @@ import java.util.Locale;
 
 import static io.restassured.RestAssured.given;
 
-public class DeliveryCard {
+public class DataGenerator {
     private static final RequestSpecification requestSpec = new RequestSpecBuilder()
             .setBaseUri("http://localhost")
             .setPort(9999)
@@ -22,7 +22,7 @@ public class DeliveryCard {
 
     private static final Faker faker = new Faker(new Locale("en"));
 
-    private DeliveryCard(){
+    private DataGenerator(){
 
     }
     private static void sendRequest(Registration.RegistrationDto user) {
